@@ -31,6 +31,18 @@ const Home = () => {
                         <Link to="/create-game">
                             <strong>Cadastrar jogos</strong>
                         </Link>
+                        
+                        <Link to="/users">
+                            <strong>Listar usuários</strong>
+                        </Link>
+
+                        <Link to="/consoles">
+                            <strong>Listar videogames</strong>
+                        </Link>
+
+                        <Link to="/games">
+                            <strong>Listar jogos</strong>
+                        </Link>
                     </div>
 
                 </main>
