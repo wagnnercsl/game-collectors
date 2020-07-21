@@ -1,0 +1,139 @@
+  #page-games {
+    height: 100vh;
+    list-style: none;
+    background: #f0f0f5;
+  }
+
+  #page-games .content main .users-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #page-games .content main div.users-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #page-games .content main ul.user-list {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    text-align: center;
+  }
+
+  #page-games .content main ul.user-list li {
+    display: flex;
+    list-style: none;
+    background-color: #253791;
+    border-radius: 40px;
+    padding: 15px;
+    margin: 10px 0px;
+  }
+
+  #page-games .content main ul.user-list p {
+    
+  }
+  
+  #page-games .content {
+    width: 100%;
+    height: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  #page-games .content header {
+    margin: 48px 0 0;
+  }
+  
+  #page-games .content main {
+    flex: 1;
+    max-width: 1100px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  #page-games .content main h1 {
+    font-size: 54px;
+    color: var(--title-color);
+  }
+  
+  #page-games .content main p {
+    font-size: 24px;
+    margin-top: 24px;
+    line-height: 38px;
+  }
+  
+  #page-games .content main a {
+    width: 100%;
+    max-width: 360px;
+    height: 72px;
+    background: var(--primary-color);
+    border-radius: 8px;
+    text-decoration: none;
+  
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  
+    margin-top: 40px;
+  }
+  
+  #page-games .content main a span {
+    display: block;
+    background: rgba(0, 0, 0, 0.08);
+    width: 72px;
+    height: 72px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+  }
+  
+  #page-games .content main a span svg {
+    color: #FFF;
+    width: 20px;
+    height: 20px;
+  }
+  
+  #page-games .content main a strong {
+    flex: 1;
+    text-align: center;
+    color: #FFF;
+  }
+  
+  #page-games .content main a:hover {
+    background: #2FB86E;
+  }
+  
+  @media(max-width: 900px) {
+    #page-games .content {
+      align-items: center;
+      text-align: center;
+    }
+  
+    #page-games .content header {
+      margin: 48px auto 0;
+    }
+  
+    #page-games .content main {
+      align-items: center;
+    }
+  
+    #page-games .content main h1 {
+      font-size: 42px;
+    }
+  
+    #page-games .content main p {
+      font-size: 24px;
+    }
+  }
+  

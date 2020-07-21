@@ -1,0 +1,149 @@
+  #page-users {
+    height: 100vh;
+    list-style: none;
+    background: #f0f0f5;
+  }
+
+  #page-users .content main .users-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #page-users .content main div.users-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #page-users .content main ul.user-list {
+    color: #fff;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    text-align: center;
+  }
+
+  #page-users .content main ul.user-list li {
+    list-style: none;
+    background-color: #253791;
+    border-radius: 40px;
+    padding: 15px;
+    margin: 10px 0px;
+  }
+
+  #page-users .content main ul.user-list li div{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #page-users .content main ul.user-list li span {
+    font-size: 1.5em;
+  }
+
+  #page-users .content main ul.user-list p {
+    
+  }
+  
+  #page-users .content {
+    width: 100%;
+    height: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  #page-users .content header {
+    margin: 48px 0 0;
+  }
+  
+  #page-users .content main {
+    flex: 1;
+    max-width: 1100px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  #page-users .content main h1 {
+    font-size: 54px;
+    color: var(--title-color);
+  }
+  
+  #page-users .content main p {
+    font-size: 24px;
+    margin-top: 24px;
+    line-height: 38px;
+  }
+  
+  #page-users .content main a {
+    width: 100%;
+    max-width: 360px;
+    height: 72px;
+    background: var(--primary-color);
+    border-radius: 8px;
+    text-decoration: none;
+  
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  
+    margin-top: 40px;
+  }
+  
+  #page-users .content main a span {
+    display: block;
+    background: rgba(0, 0, 0, 0.08);
+    width: 72px;
+    height: 72px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+  }
+  
+  #page-users .content main a span svg {
+    color: #FFF;
+    width: 20px;
+    height: 20px;
+  }
+  
+  #page-users .content main a strong {
+    flex: 1;
+    text-align: center;
+    color: #FFF;
+  }
+  
+  #page-users .content main a:hover {
+    background: #2FB86E;
+  }
+  
+  @media(max-width: 900px) {
+    #page-users .content {
+      align-items: center;
+      text-align: center;
+    }
+  
+    #page-users .content header {
+      margin: 48px auto 0;
+    }
+  
+    #page-users .content main {
+      align-items: center;
+    }
+  
+    #page-users .content main h1 {
+      font-size: 42px;
+    }
+  
+    #page-users .content main p {
+      font-size: 24px;
+    }
+  }
+  
