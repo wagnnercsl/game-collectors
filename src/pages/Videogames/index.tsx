@@ -5,15 +5,15 @@ import api from '../../services/api';
 import './styles.css';
 import logo from '../../assets/logo.png';
 
-interface GameConsole {
+interface Videogame {
     id: number,
     name: string, 
     image: string,
     year: string,
 }
 
-const Consoles = () => {
-    const [gameConsoles, setGameConsoles] = useState<GameConsole[]>([]);
+const Videogames = () => {
+    const [videogames, setVideogames] = useState<Videogame[]>([]);
     const exampleVideogame = [{
         id: 1,
         title: "Atari",
@@ -21,27 +21,27 @@ const Consoles = () => {
     }];
 
     useEffect(() => {
-        api.get('consoles').then(response => {
-            setGameConsoles(response.data);
+        api.get('videogames').then(response => {
+            setVideogames(response.data);
         });
     }, []);
 
     return (
-        <div id="page-consoles">
+        <div id="page-videogames">
             <div className="content">
                 <header>
                     <img src={logo} alt="Games" height={50}/>
                 </header>
 
                 <main>
-                    <div className="consoles-container">
-                        <ul className="consoles-list">
+                    <div className="videogames-container">
+                        <ul className="videogames-list">
                         {
-                            exampleVideogame.map(gameConsole => 
-                                <li key={gameConsole.id} className="">
+                            exampleVideogame.map(videogame => 
+                                <li key={videogame.id} className="">
                                     <div>
-                                        <p>{gameConsole.title}</p>
-                                        <p>{gameConsole.year}</p>
+                                        <p>{videogame.title}</p>
+                                        <p>{videogame.year}</p>
                                     </div>
                                 </li>
                             )
@@ -62,4 +62,4 @@ const Consoles = () => {
     );
 }
 
-export default Consoles;
+export default Videogames;

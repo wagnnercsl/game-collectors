@@ -1,21 +1,21 @@
-  #page-consoles {
+  #page-videogames {
     height: 100vh;
     list-style: none;
     background: #f0f0f5;
   }
 
-  #page-consoles .content main .consoles-container {
+  #page-videogames .content main .videogames-container {
     display: flex;
     flex-direction: column;
   }
 
-  #page-consoles .content main div.consoles-container {
+  #page-videogames .content main div.videogames-container {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
 
-  #page-consoles .content main ul.consoles-list {
+  #page-videogames .content main ul.videogames-list {
     color: #fff;
     width: 600px;
     display: flex;
@@ -24,7 +24,7 @@
     text-align: center;
   }
 
-  #page-consoles .content main ul.consoles-list li {
+  #page-videogames .content main ul.videogames-list li {
     list-style: none;
     background-color: #253791;
     border-radius: 40px;
@@ -32,20 +32,20 @@
     margin: 10px 0px;
   }
 
-  #page-consoles .content main ul.consoles-list li div{
+  #page-videogames .content main ul.videogames-list li div{
     display: flex;
     justify-content: space-between;
   }
 
-  #page-consoles .content main ul.consoles-list li span {
+  #page-videogames .content main ul.videogames-list li span {
     font-size: 1.5em;
   }
 
-  #page-consoles .content main ul.consoles-list p {
+  #page-videogames .content main ul.videogames-list p {
     
   }
   
-  #page-consoles .content {
+  #page-videogames .content {
     width: 100%;
     height: 100%;
     max-width: 1100px;
@@ -57,11 +57,11 @@
     align-items: flex-start;
   }
   
-  #page-consoles .content header {
+  #page-videogames .content header {
     margin: 48px 0 0;
   }
   
-  #page-consoles .content main {
+  #page-videogames .content main {
     flex: 1;
     max-width: 560px;
   
@@ -70,18 +70,18 @@
     justify-content: center;
   }
   
-  #page-consoles .content main h1 {
+  #page-videogames .content main h1 {
     font-size: 54px;
     color: var(--title-color);
   }
   
-  #page-consoles .content main p {
+  #page-videogames .content main p {
     font-size: 24px;
     margin-top: 24px;
     line-height: 38px;
   }
   
-  #page-consoles .content main a {
+  #page-videogames .content main a {
     width: 100%;
     max-width: 360px;
     height: 72px;
@@ -96,7 +96,7 @@
     margin-top: 40px;
   }
   
-  #page-consoles .content main a span {
+  #page-videogames .content main a span {
     display: block;
     background: rgba(0, 0, 0, 0.08);
     width: 72px;
@@ -108,41 +108,41 @@
     transition: background-color 0.2s;
   }
   
-  #page-consoles .content main a span svg {
+  #page-videogames .content main a span svg {
     color: #FFF;
     width: 20px;
     height: 20px;
   }
   
-  #page-consoles .content main a strong {
+  #page-videogames .content main a strong {
     flex: 1;
     text-align: center;
     color: #FFF;
   }
   
-  #page-consoles .content main a:hover {
+  #page-videogames .content main a:hover {
     background: #2FB86E;
   }
   
   @media(max-width: 900px) {
-    #page-consoles .content {
+    #page-videogames .content {
       align-items: center;
       text-align: center;
     }
   
-    #page-consoles .content header {
+    #page-videogames .content header {
       margin: 48px auto 0;
     }
   
-    #page-consoles .content main {
+    #page-videogames .content main {
       align-items: center;
     }
   
-    #page-consoles .content main h1 {
+    #page-videogames .content main h1 {
       font-size: 42px;
     }
   
-    #page-consoles .content main p {
+    #page-videogames .content main p {
       font-size: 24px;
     }
   }

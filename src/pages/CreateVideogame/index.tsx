@@ -7,14 +7,14 @@ import api from '../../services/api';
 import './styles.css';
 import logo from '../../assets/logo.png';
 
-interface Console {
+interface Videogame {
     id: number;
     name: string;
     year: string;
     image: string;
 }
 
-const CreateConsole = () => {
+const CreateVideogame = () => {
 
     const [formData, setFormData] = useState({
         name: '',
@@ -67,7 +67,7 @@ const CreateConsole = () => {
             image,
         };
 
-        await api.post('consoles', data);
+        await api.post('videogames', data);
 
         alert('Cadastro realizado com sucesso!');
         history.push('/');
@@ -85,7 +85,7 @@ const CreateConsole = () => {
             </header>
 
             <form onSubmit={handleSubmit}>
-                <h1>Cadastro de <br/> consoles</h1>
+                <h1>Cadastro de <br/> videogames</h1>
 
                 <fieldset>
                     <legend>
@@ -140,4 +140,4 @@ const CreateConsole = () => {
     );
 }
 
-export default CreateConsole;
+export default CreateVideogame;

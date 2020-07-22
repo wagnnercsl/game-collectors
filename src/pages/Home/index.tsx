@@ -24,7 +24,7 @@ const Home = () => {
                             <strong>Cadastrar usuário</strong>
                         </Link>
 
-                        <Link to="/create-console">
+                        <Link to="/create-videogame">
                             <strong>Cadastrar videogame</strong>
                         </Link>
 
@@ -36,7 +36,7 @@ const Home = () => {
                             <strong>Listar usuários</strong>
                         </Link>
 
-                        <Link to="/consoles">
+                        <Link to="/videogames">
                             <strong>Listar videogames</strong>
                         </Link>
 

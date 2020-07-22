@@ -14,7 +14,7 @@ interface Game {
     image: string;
 }
 
-interface GameConsole {
+interface Videogame {
     id: number;
     name: string;
     year: string;
@@ -24,8 +24,8 @@ interface GameConsole {
 const CreateGame = () => {
 
     const [game, setGame] = useState<Game>();
-    const [gameConsole, setConsole] = useState<GameConsole>();
-    const [gameConsolesList, setGameConsolesList] = useState<GameConsole[]>([]);
+    const [videogame, setvideogame] = useState<Videogame>();
+    const [videogamesList, setVideogamesList] = useState<Videogame[]>([]);
 
     const [formData, setFormData] = useState({
         title: '',
@@ -33,13 +33,13 @@ const CreateGame = () => {
         image: '',
     });
 
-    const [selectedConsole, setSelectedConsole] = useState<number[]>([]);
+    const [selectedvideogame, setSelectedvideogame] = useState<number[]>([]);
     
     const history = useHistory();
 
     useEffect(() => {
-        api.get('consoles').then(response => {
-           setGameConsolesList(response.data);
+        api.get('videogames').then(response => {
+           setVideogamesList(response.data);
         })
     }, []);
 
@@ -50,17 +50,16 @@ const CreateGame = () => {
     }
 
     function handleSelectItem(id: number) {
-        const alreadySelected = selectedConsole.findIndex(item => item === id);
+        const alreadySelected = selectedvideogame.findIndex(item => item === id);
 
         if(alreadySelected >= 0) {
-            const filteredItems = selectedConsole.filter(item => item !== id);
+            const filteredItems = selectedvideogame.filter(item => item !== id);
 
-            setSelectedConsole(filteredItems);
+            setSelectedvideogame(filteredItems);
         } else {
-            setSelectedConsole([...selectedConsole, id]);
+            setSelectedvideogame([...selectedvideogame, id]);
         }
         
-        console.log(selectedConsole);
     }
 
     async function handleSubmit(event: FormEvent) {
@@ -140,16 +139,16 @@ const CreateGame = () => {
 
                 <fieldset>
                     <legend>
-                        <h2>Console do game</h2>
+                        <h2>videogame do game</h2>
                         <span>Selecione um item abaixo</span>
                     </legend>
 
                     <ul className="items-grid">
                         
-                        { gameConsolesList.map(item => 
+                        { videogamesList.map(item => 
                             (
                                 <li 
-                                className={selectedConsole.includes(item.id) ? 'selected': ''}
+                                className={selectedvideogame.includes(item.id) ? 'selected': ''}
                                 key={item.id} 
                                 onClick={() => handleSelectItem(item.id)}>
                                     <img src={item.image} alt={item.image} />
